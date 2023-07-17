@@ -1,0 +1,842 @@
+/* Flex container */
+.flex {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 1rem; 
+ }
+ 
+ /* Logo */
+ .logo {
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    color: #ffffff; 
+    text-decoration: none; 
+ }
+ 
+ /* Availability button */
+ .btn {
+    background-color: #ffffff; 
+    color: #fff; 
+    padding: 8px 20px; 
+    border-radius: 4px; 
+    text-transform: uppercase; 
+    font-weight: bold; 
+    text-decoration: none; 
+    cursor: pointer; 
+ }
+ 
+ /* Menu button */
+ #menu-btn {
+    font-size: 24px; 
+    color: #ffffff; 
+    cursor: pointer; 
+ }
+ 
+ /* Navbar container */
+ .navbar {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center; 
+    padding: 0 20px; 
+    background-color: rgb(94, 243, 8); 
+    min-height: 50px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 30px; 
+    width: 100%;
+ }
+ 
+ /* Navbar links */
+ .navbar a {
+    color: #000000; 
+    text-decoration: none; 
+    margin-right: 20px; 
+    font-size: 1rem; 
+    border: 2px solid #000000; 
+    border-radius: 25px; 
+    padding: 0.5rem 1rem; 
+    transition: all 0.3s ease-in-out; 
+ }
+ 
+ /* hover effect to links */
+ .navbar a:hover {
+    background-color: #000000; 
+    color: #ffffff; 
+ }
+ 
+ /* Active link */
+ .navbar a.active {
+    background-color: #000000; 
+    color: #ffffff; 
+    font-weight: bold; 
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .navbar {
+       padding: 0;
+   }
+
+   .navbar a {
+       margin-top: 10px;
+       margin-bottom: 10px;
+       margin-right: 0;
+       width: 100%;
+       text-align: center;
+   }
+
+   .btn {
+       margin-top: 10px;
+       margin-bottom: 10px;
+       width: 100%;
+       text-align: center;
+   }
+}
+ /* CSS for home section */
+ .home {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin: 0 auto;
+   padding: 50px 0;
+   max-width: 1200px;
+ }
+ 
+ .box1 {
+   position: relative;
+   border: 10px solid #777;
+   width: 100%; 
+   height: auto; 
+   max-width: 500px; 
+   margin: 20px;
+   background-color: #38df0e;
+   overflow: hidden;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+   transition: all 0.3s ease-in-out;
+ }
+
+
+ .box1:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .box1 .discount {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   padding: 5px 10px;
+   background-color: #ff4b4b;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 600;
+ }
+ 
+ .box1 .image {
+   position: relative;
+   height: 200px;
+   overflow: hidden;
+ }
+ 
+ .box1 .image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: all 0.3s ease-in-out;
+ }
+ 
+ .box1 .image:hover img {
+   transform: scale(1.1);
+ }
+ 
+ 
+ 
+ .box1 .content {
+   padding: 10px 10px; 
+   text-align: center;
+ }
+ 
+ .box1 h3 {
+   margin: 0;
+   font-size: 24px;
+   font-weight: 600;
+ }
+ 
+ .box1 .price {
+   margin: 10px 0;
+   font-size: 14px;
+   font-weight: 600;
+ }
+ 
+ .box1 .price span {
+   color: #777;
+   text-decoration: line-through;
+   margin-left: 10px;
+ }
+ 
+ /* CSS for media queries */
+ @media screen and (max-width: 768px) {
+   .box1 {
+     max-width: 100%; 
+   }
+ }
+ 
+ /* Style the caption and button in each slide */
+ /* Default styles for desktop */
+.flex {
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+}
+
+.flex h3 {
+   margin-bottom: 10px;
+}
+
+.btn {
+   display: inline-block;
+   background-color: #37f309;
+   color: #333;
+   padding: 10px 20px;
+   border-radius: 20px;
+   text-decoration: none;
+   transition: all 0.2s;
+}
+
+.btn:hover {
+   background-color: #333;
+   color: #fff;
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+   .flex {
+       padding: 10px;
+       border-radius: 0;
+       text-align: left;
+   }
+   
+   .flex h3 {
+       margin-bottom: 5px;
+   }
+   
+   .btn {
+       display: block;
+       width: 100%;
+       margin-top: 10px;
+   }
+}
+ /* Define some basic styling for the availability section */
+ section.availability {
+   padding: 40px;
+   background-image: url('../images/hol2.jpg');
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+ }
+ .parallax {
+   height: 140vh; /* Ajustează înălțimea în funcție de necesități */
+  
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transform: translateZ(0);
+   
+ }
+
+ 
+ @keyframes parallaxScroll {
+   0% {
+     transform: translate3d(0, 0, 0);
+   }
+   100% {
+     transform: translate3d(0, -50vh, 0); /* Ajustează valoarea de deplasare verticală */
+   }
+ }
+
+ @media screen and (max-width: 768px) {
+   /* Stiluri pentru ecrane de dimensiuni mici */
+   .parallax {
+     animation-duration: 5s; /* Ajustează durata animației pentru ecrane mici */
+   }
+ }
+ 
+ @media screen and (min-width: 769px) and (max-width: 1024px) {
+   /* Stiluri pentru ecrane de dimensiuni medii */
+   .parallax {
+     animation-duration: 8s; /* Ajustează durata animației pentru ecrane medii */
+   }
+ }
+ 
+ @media screen and (min-width: 1025px) {
+   /* Stiluri pentru ecrane de dimensiuni mari */
+   .parallax {
+     animation-duration: 10s; /* Ajustează durata animației pentru ecrane mari */
+   }
+ }
+ /* Style the form and flex container */
+ form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 100%;
+   margin: 0 auto;
+ }
+ 
+ /* Style the form inputs and select elements */
+ .input {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border: 2px solid #ccc;
+   border-radius: 4px;
+ }
+ 
+ select.input{
+   height: 40px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   background: #fff;
+   border: 2px solid #ccc;
+   border-radius: 4px;
+   color: #000;
+   font-size: 16px;
+   padding: 0 20px;
+   width: 100%;
+ }
+ 
+ /* Style the form labels */
+ p {
+   margin: 0;
+   font-size: 16px;
+   color: #333;
+   font-weight: 600;
+ }
+ 
+ p span {
+   color: red;
+ }
+ 
+ /* Style the form button */
+ input[type="submit"].btn {
+   width: 100%;
+   background-color: #39f80a;
+   color: #333;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   margin: 8px 0;
+   font-size: 18px;
+   font-weight: 600;
+   
+ }
+ 
+ /* Style the form sections */
+ .box{
+   width: 100%;
+   max-width: 250px;
+   margin: 15px;
+ }
+ 
+ /* CSS for media queries */
+ @media screen and (min-width: 768px) {
+   form {
+     max-width: 800px;
+   }
+   
+   .box{
+     flex: 1 1 250px;
+     margin: 15px;
+   }
+ }
+ 
+ /* Define some basic styling for the about section */
+ section.about {
+   padding: 40px;
+   background-color: #000000;
+   text-align: center;
+}
+
+/* Style the rows */
+.row {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 40px;
+}
+
+/* Style the revers class*/
+.revers {
+   flex-direction: row-reverse;
+}
+
+/* Style the images */
+.image {
+   width: 100%;
+   max-width: 500px;
+   text-align: center;
+}
+
+.image img {
+   width: 100%;
+   height: auto;
+   max-height: 400px;
+}
+
+/* Style the content */
+.content {
+   width: 100%;
+   max-width: 500px;
+   padding: 20px;
+   text-align: left;
+}
+
+.content h3 {
+   margin-bottom: 20px;
+   font-size: 28px;
+   font-weight: 600;
+}
+
+.content p {
+   margin-bottom: 20px;
+   font-size: 16px;
+   line-height: 1.5;
+   color: #ffffff;
+}
+
+.content a.btn {
+   display: inline-block;
+   background-color: #25f00a;
+   color: #333;
+   padding: 10px 20px;
+   border-radius: 20px;
+   text-decoration: none;
+   transition: all 0.2s;
+}
+
+.content a.btn:hover {
+   background-color: #333;
+   color: #fff;
+}
+ 
+ /* Define some basic styling for the services section */
+ section.services {
+    padding: 40px;
+    background-color: #f5f5f5;
+    text-align: center;
+ }
+ 
+ /* Style the container for the boxes */
+ .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ 
+ /* Style the boxes */
+ .box {
+    width: calc(20% - 20px);
+    padding: 20px;
+    text-align: center;
+ }
+ 
+ .box img {
+    width: 50%;
+    margin-bottom: 20px;
+ }
+ 
+ .box h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+ }
+ 
+ .box p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+ }
+ 
+ /* Define some basic styling for the reservation section */
+ section.reservation {
+    padding: 40px;
+    
+    text-align: center;
+    background-image: url('../images/lobby.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ .parallax2 {
+   height: 220vh; /* Ajustează înălțimea în funcție de necesități */
+  
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transform: translateZ(0);
+   
+ }
+
+ 
+ 
+ /* Style the form */
+ form {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+ }
+ 
+ /* Style the heading */
+ form h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+ 
+ /* Style the flex container */
+ form .flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ 
+ /* Style the boxes */
+ form .box {
+    width: calc(25% - 20px);
+    padding: 20px;
+    margin-bottom: 40px;
+ }
+ 
+ form .box p {
+    font-size: 16px;
+    color: #5fee0d;
+    margin-bottom: 10px;
+ }
+ 
+ form .box input, form .box select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 16px;
+ }
+ 
+ form .box select {
+    height: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+ }
+ 
+ form .box span {
+    color: rgb(43, 255, 0);
+ }
+ 
+ /* Style the submit button */
+ form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #30e90b;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s;
+ }
+ 
+ form input[type="submit"]:hover {
+    background-color: #333;
+    color: #fff;
+ }
+ 
+ /* Define some basic styling for the gallery section */
+ /* Set default styles for the gallery */
+.gallery {
+    padding: 50px 0;
+    background-color: #000000;
+}
+
+.gallery-slider {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-slider img {
+    width: 100%;
+    height: auto;
+}
+
+/* Set styles for Swiper slider and pagination */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-pagination {
+    margin-top: 20px;
+}
+
+/* Set different styles for different devices */
+@media (max-width: 768px) {
+    /* Set gallery slider to full width on mobile */
+    .gallery-slider {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    /* Set gallery slider to 90% width on tablets */
+    .gallery-slider {
+        max-width: 90%;
+    }
+}
+
+/* Set styles for larger screens */
+@media (min-width: 1200px) {
+    /* Center gallery slider on large screens */
+    .gallery-slider {
+        margin: 0 auto;
+    }
+}
+ 
+ 
+ /* Form */
+form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 2rem;
+   background-color: #777;
+}
+
+form h3 {
+   margin-bottom: 1rem;
+}
+
+form .box {
+   width: 80%;
+   padding: 1rem;
+   margin-bottom: 1rem;
+   border: none;
+   border-radius: 5px;
+   font-size: 1rem;
+   background-color: #777;
+}
+
+form .btn {
+   background-color: #67f10a;
+   color: #fff;
+   padding: 0.1rem 0.1rem;
+   border: none;
+   border-radius: 5px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 600;
+   transition: all 0.2s ease-in-out;
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 200px;
+   width: 100%;
+   height: 40px;
+   font-size: 0.1rem;
+   text-align: center; 
+}
+
+form .btn:hover {
+   background-color: #777;
+   color: #72f507;
+   cursor: pointer;
+}
+ 
+ 
+ 
+ 
+ /* Reviews Section */
+ .reviews {
+    padding: 60px 0;
+    background-image: url('../images/lobby1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  .parallax3 {
+   height: 70vh; /* Ajustează înălțimea în funcție de necesități */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   transform: translateZ(0);
+   
+ }
+ 
+ @keyframes parallaxScroll {
+   0% {
+     transform: translate3d(0, 0, 0);
+   }
+   100% {
+     transform: translate3d(0, -50vh, 0); /* Ajustează valoarea de deplasare verticală */
+   }
+ }
+  .reviews__title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333333;
+  }
+  
+  /* Button styles */
+  .reviews {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+  }
+  .reviews__title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #22ee07;
+  }
+  
+  /* Button styles */
+  .reviews__container {
+    display: flex;
+    justify-content: center;
+  }
+  .reviews__button-link {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .reviews__button {
+    position: relative;
+    padding: 20px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #2ff008;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+  }
+  .reviews__button::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+  }
+  .reviews__button:hover {
+    transform: scale(1.05);
+    background-color: #777;
+  }
+  .reviews__button:hover::before {
+    width: 100%;
+    left: 0;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .reviews__button {
+      padding: 20px 30px;
+      font-size: 16px;
+    }
+  }
+ 
+ 
+ 
+ 
+ 
+ /* Define some basic styling for the footer section */
+.footer {
+   text-align: center;
+   padding: 2rem;
+   background-color: #000000;
+   
+}
+
+/* Style the container for the boxes */
+.box-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* Style the boxes */
+.box {
+   width: 100%;
+   max-width: 300px;
+   padding: 1rem;
+}
+
+/* Style the links inside the boxes */
+.box a {
+   display: block;
+   margin-bottom: 1rem;
+   font-size: 1.2rem;
+}
+
+.box a i {
+   margin-right: 0.5rem;
+}
+
+.box a, .box a:visited {
+   color: #ffffff;
+   text-decoration: none;
+}
+
+.box a:hover {
+   color: #23f707;
+}
+
+.box a:hover, .box a:active {
+   border-bottom: 2px solid #333;
+}
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
